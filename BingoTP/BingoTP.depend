@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1594796900 source:c:\users\bautikiller\desktop\unla\programacion de computadoras\bingotp\procedimientos.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"procedimientos.h"
+
+1594644964 c:\users\bautikiller\desktop\unla\programacion de computadoras\bingotp\procedimientos.h
+
+1594501269 source:c:\users\bautikiller\desktop\unla\programacion de computadoras\bingotp\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"procedimientos.h"
+
