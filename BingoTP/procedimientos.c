@@ -5,12 +5,18 @@
 #define RENGLON 3
 #define COLUMNA 5
 
+void limpiarPantalla(){
+    system("cls");          //Limpia la consola
+}
+
 void datosJugador() {
 
     char nombre[20];
     char apellido[20];
     long int documento = 0; //Tipo de dato entero mas largo para almacenar el documento
     int cantCartones = 0;
+
+    limpiarPantalla();
 
     printf("Bienvenido al Bingo 3.0\n");
     printf("Ingrese sus datos para poder jugar !\n");
@@ -24,11 +30,16 @@ void datosJugador() {
     //Fin datos del jugador
     //Fin cant cartones
 }
+
 //inicio codigo sergio
 int cuantosCartones(){
     int opci=0;
-    printf(" \n\n.....CON CUANTOS CARTONES QUIERES JUGAR? CON 1 CON 2 O 3\n");
+
+    limpiarPantalla();
+
+    printf(" \n\n¿Con cuantos cartones te gustaria jugar?\n Solo podes elegir 1, 2 o 3...");
     scanf("%d",&opci);
+    
     while((opci>3)||(opci<1)){
             printf("\n!!!!!  ERROR NUMERO NO VALIDO ELIJA OTRO... \n");
             printf(" .....CON CUANTOS CARTONES QUIERES JUGAR? CON 1 CON 2 O 3 \n");
@@ -36,20 +47,23 @@ int cuantosCartones(){
     }
     return opci;
 }
+
 void tipoDeCarton(int m[][RENGLON][COLUMNA],int opci){
     int opci2;
    printf("\n\n!!!!!QUE TIPO DE CARTONES QUIERES?!!!!!!\n");
    printf(" 1 : COMPRAR UNOS CARTONES ALEATORIOS\n");
    printf(" 2 : COMPRAR UNOS CARTONES PERSONALIZADOS\n");
    scanf("%d",&opci2);
-    while ((opci2<1)||(opci2>2)){
+
+    while ((opci2<1)||(opci2>2)) {
             printf("!!!!!!RESPUETA NO VALIDA INGRESE UN NUMERO DE LAS OPCIONES");
             printf("!!!!!QUE TIPO DE CARTONES QUIERES?!!!!!!\n");
             printf(" 1 : COMPRAR UNOS CARTONES ALEATORIOS\n");
             printf(" 2 : COMPRAR UNOS CARTONES PERSONALIZADOS\n");
             scanf("%d",&opci2);
     }
-    if (opci2==1){
+
+    if (opci2==1) {
           cargarMatrizAleatoriaSinRepetir(m, opci);
     }else{
         cargarManualmenteMatriz( m ,opci);
