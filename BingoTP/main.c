@@ -2,8 +2,11 @@
 #include <stdlib.h>
 #include <time.h>
 #include "procedimientos.h"
+#include "procedimientos.c"
+
 int cuantosCartones();
 void tipoDeCarton(int m[][RENGLON][COLUMNA],int opci);
+
 int main()
 {
     int numeroDeCartones=0;

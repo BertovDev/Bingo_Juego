@@ -18,14 +18,14 @@ void datosJugador() {
 
     limpiarPantalla();
 
-    printf("Bienvenido al Bingo 3.0\n");
-    printf("Ingrese sus datos para poder jugar !\n");
+    printf("------Bienvenido al Bingo 3.0------\n");
+    printf("\nIngrese sus datos para poder jugar !\n");
     //Datos del jugador
-    printf("Ingrese su nombre\n");
+    printf("Ingrese su nombre: ");
     scanf("%s",nombre);
-    printf("Ingrese su apeliido\n");
+    printf("Ingrese su apellido: ");
     scanf("%s",apellido);
-    printf("Ingrese su documento\n");
+    printf("Ingrese su documento: ");
     scanf("%d",&documento);
     //Fin datos del jugador
     //Fin cant cartones
@@ -37,7 +37,7 @@ int cuantosCartones(){
 
     limpiarPantalla();
 
-    printf(" \n\n¿Con cuantos cartones te gustaria jugar?\n Solo podes elegir 1, 2 o 3...");
+    printf(" \n\n Con cuantos cartones te gustaria jugar?\n Solo podes elegir 1, 2 o 3...");
     scanf("%d",&opci);
     
     while((opci>3)||(opci<1)){
