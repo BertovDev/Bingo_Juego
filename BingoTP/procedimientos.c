@@ -5,6 +5,7 @@
 #define RENGLON 3
 #define COLUMNA 5
 
+
 void limpiarPantalla(){
     system("cls");          //Limpia la consola
 }
@@ -34,7 +35,8 @@ void datosJugador() {
 //inicio codigo sergio
 int cuantosCartones(){
     int opci=0;
-
+    int numeroDeCartones=0;
+    
     limpiarPantalla();
 
     printf(" \n\n Con cuantos cartones te gustaria jugar?\n Solo podes elegir 1, 2 o 3...");
@@ -98,6 +100,7 @@ int buscarNumeroRepe(int m [][RENGLON][COLUMNA],int opcion,int busco){
         return posi;
 
 }
+
 void cargarMatrizAleatoriaSinRepetir(int m[][RENGLON][COLUMNA],int opcion){
     int i,r,c;
     int almacen=0;
@@ -105,10 +108,10 @@ void cargarMatrizAleatoriaSinRepetir(int m[][RENGLON][COLUMNA],int opcion){
      for (i=0;i<opcion;i++){
             for (r=0;r<RENGLON;r++) {
                     for (c=0;c<COLUMNA;c++){
-                        almacen= 1+rand()%89;
+                        almacen= 1 + rand()%90;
                         posicion=buscarNumeroRepe(m,opcion,almacen);
                         while (posicion!= -1){
-                                almacen= 1+rand()%89;
+                                almacen= 1 + rand()%90;
                                 posicion=buscarNumeroRepe(m,opcion,almacen);
 
                         }
@@ -118,8 +121,12 @@ void cargarMatrizAleatoriaSinRepetir(int m[][RENGLON][COLUMNA],int opcion){
     }
 
 }
+
 void mostrarMatriz(int m[][RENGLON][COLUMNA],int opcion){
     int i,r,c;
+    /*Agregar limpiar pantalla una vez terminado el muestreo de la matriz de la pc*/
+
+    printf("Tus cartones son: \n\n");
 
     for (i=0;i<opcion;i++){
             for (r=0;r<3;r++) {
@@ -131,9 +138,10 @@ void mostrarMatriz(int m[][RENGLON][COLUMNA],int opcion){
                         }
                         printf("\n");
                 }
-                printf("\n\n\n");
+                printf("\n\n");
         }
 }
+
 void cargarManualmenteMatriz(int m [][RENGLON][COLUMNA],int opcion){
     int i,r,c;
     int almacen=0;
@@ -161,6 +169,7 @@ void cargarManualmenteMatriz(int m [][RENGLON][COLUMNA],int opcion){
             }
     }
 }
+
 /*proceso para cargar los cartones aleatorios
 void cargarVectorConAleatoriosSinRepetir(int m[][COLUMNAS], int tam, int mini,int maxi){
 

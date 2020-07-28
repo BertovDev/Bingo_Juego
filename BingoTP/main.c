@@ -1,25 +1,34 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include "procedimientos.h"
+
 #include "procedimientos.c"
+#include "procedimientos.h"
 
-int cuantosCartones();
-void tipoDeCarton(int m[][RENGLON][COLUMNA],int opci);
+int main() {
+  srand(time(NULL));
 
-int main()
-{
-    int numeroDeCartones=0;
-    srand(time(NULL));
-    datosJugador();
-       numeroDeCartones = cuantosCartones();
+  datosJugador();
+  int numeroDeCartones = cuantosCartones();
+  int matrizJugador[numeroDeCartones][3][5];  // MATRIZ DEL JUGADOR
+  int matrizPc[numeroDeCartones][3][5];       // Matriz de la PC
 
-   int matrizJugador[numeroDeCartones][3][5];//MATRIZ DEL JUGADOR
+  /*Carga de matriz, tanto del jugador como de la PC*/
 
-   cargarMatrizDeCeros(matrizJugador,numeroDeCartones);
+  /*cargarMatrizDeCeros(matrizJugador, numeroDeCartones);
+  cargarMatrizDeCeros(matrizPc, numeroDeCartones);*/
 
-   tipoDeCarton(matrizJugador,numeroDeCartones);
+  cargarMatrizAleatoriaSinRepetir(matrizPc, numeroDeCartones);
 
-   mostrarMatriz(matrizJugador,numeroDeCartones);
-    return 0;
+  /*Se elige el tipo de carton*/
+  tipoDeCarton(matrizJugador, numeroDeCartones);
+
+  /*Se muetra la matriz del jugador y de la pc ---------> El de la pc se muestra
+   * solo para testear que esta bien*/
+  limpiarPantalla();
+  mostrarMatriz(matrizJugador, numeroDeCartones);
+  printf("-------------------Cartones PC:-----------------------\n");
+  mostrarMatriz(matrizPc, numeroDeCartones);
+
+  return 0;
 }
