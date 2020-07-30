@@ -16,7 +16,8 @@ void datosJugador() {
     char apellido[20];
     long int documento = 0; //Tipo de dato entero mas largo para almacenar el documento
     int cantCartones = 0;
-
+    long int documentoError;
+    
     limpiarPantalla();
 
     printf("------Bienvenido al Bingo 3.0------\n");
@@ -26,8 +27,16 @@ void datosJugador() {
     scanf("%s",nombre);
     printf("Ingrese su apellido: ");
     scanf("%s",apellido);
-    printf("Ingrese su documento: ");
-    scanf("%d",&documento);
+
+        /*Se pide el numero de documento, y se corrobora que solo se ingrese numeros.*/
+    do
+    {
+        printf("Ingrese su documento: ");
+        while (getchar() != '\n');
+        
+    } while (scanf("%d", &documento) !=1);
+
+    
     //Fin datos del jugador
     //Fin cant cartones
 }
