@@ -15,20 +15,14 @@ int main() {
 
     /*Carga de matriz, tanto del jugador como de la PC*/
 
-    /*cargarMatrizDeCeros(matrizJugador, numeroDeCartones);
-  cargarMatrizDeCeros(matrizPc, numeroDeCartones);*/
-
-    cargarMatrizAleatoriaSinRepetir(matrizPc, numeroDeCartones);
+    cargarMatrizDeCeros(matrizJugador, numeroDeCartones);
 
     /*Se elige el tipo de carton*/
     tipoDeCarton(matrizJugador, numeroDeCartones);
 
-    /*Se muetra la matriz del jugador y de la pc ---------> El de la pc se muestra
-   * solo para testear que esta bien*/
+    /*Se muetra la matriz del jugador*/
     limpiarPantalla();
     mostrarMatriz(matrizJugador, numeroDeCartones);
-    printf("-------------------Cartones PC:-----------------------\n");
-    mostrarMatriz(matrizPc, numeroDeCartones);
 
     return 0;
 }

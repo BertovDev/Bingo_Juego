@@ -13,9 +13,9 @@ void limpiarPantalla() {
 void datosJugador() {
     char nombre[20];
     char apellido[20];
-    long int documento = 0;  //Tipo de dato entero mas largo para almacenar el documento
+    int documento = 0;  //Tipo de dato entero mas largo para almacenar el documento
     int cantCartones = 0;
-    long int documentoError;
+    int documentoError;
 
     limpiarPantalla();
 
@@ -35,6 +35,7 @@ void datosJugador() {
 
     } while (scanf("%d", &documento) != 1);
 
+    printf("Dni: %d", documento);
     //Fin datos del jugador
     //Fin cant cartones
 }
@@ -74,6 +75,7 @@ void tipoDeCarton(int m[][RENGLON][COLUMNA], int opci) {
 
     if (opci2 == 1) {
         cargarMatrizDeCeros(m, opci);
+        cargarMatrizAleatoriaSinRepetir(m, opci);
 
     } else {
         cargarMatrizDeCeros(m, opci);
