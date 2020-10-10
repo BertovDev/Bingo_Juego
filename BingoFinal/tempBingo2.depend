@@ -1,0 +1,64 @@
+# depslib dependency file v1.0
+1602364230 source:c:\users\bautikiller\desktop\c\tempbingo2\cartones.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<unistd.h>
+	"jugador.h"
+	"cartones.h"
+	"funcionesYProcedimientos.h"
+	"jugador2.h"
+
+1602362371 c:\users\bautikiller\desktop\c\tempbingo2\cartones.h
+
+1602363399 source:c:\users\bautikiller\desktop\c\tempbingo2\funcionesyprocedimientos.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<unistd.h>
+	"jugador.h"
+	"cartones.h"
+	"funcionesYProcedimientos.h"
+	"jugador2.h"
+
+1602358422 c:\users\bautikiller\desktop\c\tempbingo2\funcionesyprocedimientos.h
+
+1602363440 source:c:\users\bautikiller\desktop\c\tempbingo2\jugador.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<unistd.h>
+	"jugador.h"
+	"cartones.h"
+	"funcionesYProcedimientos.h"
+	"jugador2.h"
+
+1602363304 c:\users\bautikiller\desktop\c\tempbingo2\jugador.h
+
+1602363539 source:c:\users\bautikiller\desktop\c\tempbingo2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<unistd.h>
+	"jugador.h"
+	"cartones.h"
+	"funcionesYProcedimientos.h"
+	"jugador2.h"
+
+1602364283 c:\users\bautikiller\desktop\c\tempbingo2\jugador2.h
+
+1602364307 source:c:\users\bautikiller\desktop\c\tempbingo2\jugador2.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<unistd.h>
+	"jugador.h"
+	"cartones.h"
+	"funcionesYProcedimientos.h"
+	"jugador2.h"
+
