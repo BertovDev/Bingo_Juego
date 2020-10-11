@@ -36,22 +36,22 @@ Jugador1 cargarJugador(){
     char auxDni[9] = " ";
     int manualOAleatorio=0;
 
-    printf("------Bienvenido al Bingo 3.0------\n");
-    printf("Ingrese sus datos para poder jugar !\n");
-    printf("\nIngrese su nombre : ");
+    printf("    ------Bienvenido al Bingo 3.0------\n");
+    printf("    Ingrese sus datos para poder jugar !\n");
+    printf("\n    Ingrese su nombre : ");
     gets(auxNombre);
     strcpy(j->nombre, auxNombre);
-    printf("\nIngrese su apellido : ");
+    printf("\n    Ingrese su apellido : ");
     fflush(stdin);
     gets(auxApellido);
     strcpy(j->apellido, auxApellido);
-    printf("\nIngrese su Dni : ");
+    printf("\n    Ingrese su Dni : ");
     fflush(stdin);
     gets(auxDni);
     strcpy(j->dni,auxDni);
 
-    printf("Datos ingresados son exito ! ");
-    printf("\nGuardando...");
+    printf("    Datos ingresados son exito ! ");
+    printf("\n    Guardando...");
     sleep(1);
 
     j->numDeCartones = cuantosCartones();

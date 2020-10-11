@@ -50,19 +50,19 @@ Carton cargarCarton(int tipo){
         {
             for (colum=0; colum<COLUMNA; colum++)
             {
-                printf("INGRESE EL NUMERO en la posicion: renglon %d columna %d \n",r,colum);
+                printf("Ingrese el numero en la posicion: renglon %d columna %d",r,colum);
                 scanf("%d",&almacen);
                 while ((almacen>90) ||(almacen<1))
                 {
-                    printf("!!!!!!!NUMERO NO VALIDO ENGRESE UN NUMERO ENTRE 1 Y 90 \n");
-                    printf("INGRESE EL NUMERO PARA EL CARTON %d en el renglon %d columna %d \n",i,r,colum);
+                    printf("¡Ingrese un numero entre 1 Y 90! \n");
+                    printf("Ingrese el numero en la posicion: renglon %d columna %d \n",i,r,colum);
                     scanf("%d",&almacen);
                 }
                 posi=buscarNumeroRepe(c->Cartones,almacen);
                 while (posi!= -1 )
                 {
-                    printf("!!!!!EL NUMERO %d YA EXISTE INGRESE UNO NUEVO \n",almacen);
-                    printf("INGRESE EL NUMERO PARA EL CARTON %d en el renglon %d columna %d \n",i,r,colum);
+                    printf("¡El numero %d ya existe, elija uno nuevo! \n",almacen);
+                    printf("Ingrese el numero en la posicion: renglon %d columna %d \n",i,r,colum);
                     scanf("%d",&almacen);
                     posi=buscarNumeroRepe(c->Cartones,almacen);
 

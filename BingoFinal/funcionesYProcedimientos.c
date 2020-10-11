@@ -16,13 +16,16 @@ int cuantosCartones()
 {
     int opci=0;
     system("cls");
-    printf("\n------Seleccion de cartones------\n");
-    printf("\nCon cuantos cartones te gustaria jugar?\n Solo podes elegir 1, 2 o 3...");
+    printf(" \n    Elija la cantidad de cartones con los que desea jugar:\n");
+    printf("    1 - Un carton \n    2 - Dos cartones \n    3 - Tres Cartones\n");
+    printf("    ");
     scanf("%d",&opci);
     while((opci>3)||(opci<1))
     {
-        printf("\n!!!!!  ERROR NUMERO NO VALIDO ELIJA OTRO... \n");
-        printf(" .....CON CUANTOS CARTONES QUIERES JUGAR? CON 1 CON 2 O 3 \n");
+        printf("\n  ¡Tienes que elegir alguna de las 3 opciones! \n");
+        printf(" \n    Elija la cantidad de cartones con los que desea jugar:\n");
+        printf("    1 - Un carton \n    2 - Dos cartones \n    3 - Tres Cartones\n");
+        printf("    ");
         scanf("%d",&opci);
     }
     return opci;
@@ -31,15 +34,17 @@ int cuantosCartones()
 int tipoDeCarton()
 {
     int opci1;
-    printf("\nQue tipo de cartones desea usar ?\n");
-    printf(" 1 : Comprar cartones aleatorios\n");
-    printf(" 2 : Comprar cartones personalizados\n");
+    printf("\n    Porfavor elija una opcion:\n");
+    printf("     1 - Usar cartones aleatorios\n");
+    printf("     2 - Usar cartones personalizados (Carga manual)\n");
+    printf("     ");
     scanf("%d",&opci1);
     while ((opci1<1)||(opci1>2)){
-        printf("!!!!!!RESPUETA NO VALIDA INGRESE UN NUMERO DE LAS OPCIONES");
-        printf("\nQue tipo de cartones desea usar ?\n");
-        printf(" 1 : Comprar cartones aleatorios\n");
-        printf(" 2 : Comprar cartones personalizados\n");
+        printf("    ¡Tiene que elegir alguna de las opciones anteriores!");
+        printf("    Porfavor elija una opcion:\n");
+        printf("     1 - Usar cartones aleatorios\n");
+        printf("     2 - Usar cartones personalizados (Carga manual)\n");
+        printf("     ");
         scanf("%d",&opci1);
     }
     system("cls");
