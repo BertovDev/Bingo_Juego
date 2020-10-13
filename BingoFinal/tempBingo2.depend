@@ -62,3 +62,66 @@
 	"funcionesYProcedimientos.h"
 	"jugador2.h"
 
+1602431669 source:c:\users\tordy\documents\github\bingo_juego\bingofinal\jugador.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<unistd.h>
+	"jugador.h"
+	"cartones.h"
+	"funcionesYProcedimientos.h"
+	"jugador2.h"
+
+1602584323 c:\users\tordy\documents\github\bingo_juego\bingofinal\jugador.h
+
+1602429735 c:\users\tordy\documents\github\bingo_juego\bingofinal\cartones.h
+
+1602429735 c:\users\tordy\documents\github\bingo_juego\bingofinal\funcionesyprocedimientos.h
+
+1602429735 c:\users\tordy\documents\github\bingo_juego\bingofinal\jugador2.h
+
+1602429735 source:c:\users\tordy\documents\github\bingo_juego\bingofinal\jugador2.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<unistd.h>
+	"jugador.h"
+	"cartones.h"
+	"funcionesYProcedimientos.h"
+	"jugador2.h"
+
+1602429735 source:c:\users\tordy\documents\github\bingo_juego\bingofinal\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<unistd.h>
+	"jugador.h"
+	"cartones.h"
+	"funcionesYProcedimientos.h"
+	"jugador2.h"
+
+1602584363 source:c:\users\tordy\documents\github\bingo_juego\bingofinal\cartones.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<unistd.h>
+	"jugador.h"
+	"cartones.h"
+	"funcionesYProcedimientos.h"
+	"jugador2.h"
+
+1602431773 source:c:\users\tordy\documents\github\bingo_juego\bingofinal\funcionesyprocedimientos.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<unistd.h>
+	"jugador.h"
+	"cartones.h"
+	"funcionesYProcedimientos.h"
+	"jugador2.h"
+
