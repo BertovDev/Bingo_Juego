@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1604325644 source:c:\users\bautikiller\desktop\c\proyectobingo\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<unistd.h>
+

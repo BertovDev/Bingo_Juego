@@ -1,0 +1,6 @@
+Bautista;Berto;96.00
+Lionel;Messi;117.00
+Mauro;Kinjuk;100
+Sergio;Cadima;84.00
+Bautis;Berto;88.20
+Nico;Perez;113.40
