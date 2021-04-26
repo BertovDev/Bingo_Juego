@@ -1,3 +1,2 @@
 # Bingo_Juego
-Juego del bingo en C
-Version sin TDA.
+Juego del bingo en C. Version sin TDA.
